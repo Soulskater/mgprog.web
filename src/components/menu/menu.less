@@ -1,0 +1,35 @@
+.menu {
+  font-size: 0;
+  text-align: center;
+  margin: auto;
+  display: flex;
+
+  .menu-item {
+    margin: 5px;
+    padding-top: 15px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    color: #ffffff;
+    white-space: nowrap;
+    border-right: none;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+
+    &:first-child {
+      margin-left: auto;
+    }
+    &:last-child {
+      margin-right: auto;
+    }
+
+    .title {
+      padding-bottom: 10px;
+    }
+
+    .logo {
+      margin-top: 15px;
+    }
+  }
+}

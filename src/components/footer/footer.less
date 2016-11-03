@@ -1,0 +1,33 @@
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  color: rgba(11, 10, 10, 0.87);
+  p:first-child {
+    margin: 0 0 5px 0;
+  }
+  p:last-child {
+    margin: 5px 0 0 0;
+  }
+
+  a {
+    &[role=social] {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      background: #313131;
+      border-radius: 20px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

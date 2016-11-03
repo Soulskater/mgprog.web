@@ -1,0 +1,66 @@
+.projects-list {
+  display: flex;
+
+  .project-item {
+    max-width: 250px;
+    height: 200px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    background: #565158;
+    position: relative;
+    color: white;
+    overflow: hidden;
+
+    &:first-child {
+      margin-left: auto;
+    }
+    &:last-child {
+      margin-right: auto;
+    }
+
+    .title {
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .description {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .button {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #2f9fff;
+      height: 40px;
+      line-height: 40px;
+      animation: .3s collapse forwards;
+      text-align: center;
+    }
+
+    &:hover {
+      cursor: pointer;
+      .button {
+        animation: .3s show forwards;
+      }
+    }
+  }
+}
+
+@keyframes show {
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes collapse {
+  to {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+}

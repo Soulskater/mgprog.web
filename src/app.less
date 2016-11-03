@@ -1,0 +1,104 @@
+/* Box model fix for all BEGIN */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Box model fix for all END */
+
+html {
+  overflow: hidden;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0
+}
+
+body {
+  color: rgba(0, 0, 0, .8);
+  background: #e0e0e0;
+  font-family: "Open Sans", "Helvetica neue", Helvetica, arial, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  line-height: normal;
+
+  a:link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  a:visited {
+    color: #ffffff;
+  }
+  a:hover {
+    color: #C5C5C5;
+  }
+  a:active {
+    color: #ffffff;
+  }
+
+  .page-content {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: rgba(255, 255, 255, 0.87);
+    padding: 0 20px;
+  }
+
+  .purple {
+    background: #565158;
+  }
+
+  .blue {
+    background: #337398;
+  }
+
+  .green {
+    background: #04ad57;
+  }
+}
+
+.example-enter {
+  transform: translateX(2000px);
+  transition: all .5s ease-in;
+}
+
+.example-enter.example-enter-active {
+  transform: translateX(0px);
+}
+
+.example-leave {
+  transform: translateX(0px);
+  transition: all .5s ease-in;
+}
+
+.example-leave.example-leave-active {
+  transform: translateX(-2000px);
+  transition: all .5s ease-in;
+}
+
+.example-appear {
+  opacity: 0.01;
+  transform: translateY(100px);
+}
+
+.example-appear.example-appear-active {
+  transform: translateX(0px);
+  opacity: 1;
+  transition: all .3s ease-in;
+}
+
+.page-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
