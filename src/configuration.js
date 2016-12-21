@@ -1,3 +1,3 @@
 export default {
-    apiServerAddress: "http://localhost:8000/api"
+    apiServerAddress: "http://mgprog-api.azurewebsites.net/api"
 };
