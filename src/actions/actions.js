@@ -23,7 +23,7 @@ export function failedProjects(error) {
 
 export function fetchProjects() {
     return function (dispatch) {
-        return fetch(config.apiServerAddress + "/projects")
+        return fetch(config.apiServerAddress + "/project")
             .then(response => response.json())
             .then(projects => {
                 dispatch(receivedProjects(projects));
